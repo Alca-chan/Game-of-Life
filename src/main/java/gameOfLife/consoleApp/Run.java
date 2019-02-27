@@ -1,3 +1,7 @@
+package gameOfLife.consoleApp;
+
+import gameOfLife.Board;
+
 import java.util.Scanner;
 
 public class Run {
@@ -23,7 +27,7 @@ public class Run {
         board.setRandomBoard();
         System.out.println(board.toString());
 
-        for (int i = 0; i < numOfGenerations; i++) {
+        for (int i = 0; i <= numOfGenerations; i++) {
             board.update();
             System.out.println(board.toString());
         }

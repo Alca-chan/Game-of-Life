@@ -1,3 +1,5 @@
+package gameOfLife;
+
 public class Cell {
     private boolean alive = false;
 

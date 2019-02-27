@@ -1,3 +1,5 @@
+package gameOfLife;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -64,6 +66,10 @@ public class Board {
             }
         }
         return count;
+    }
+
+    public Boolean isCellAlive(int row, int column) {
+        return board.get(row).get(column).isAlive();
     }
 
     @Override
