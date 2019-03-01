@@ -66,7 +66,9 @@ public class MainPanel extends JPanel implements ActionListener {
         generationsField.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
-                goWithThisBoard();
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    goWithThisBoard();
+                }
             }
         });
     }
